@@ -1,6 +1,6 @@
 # lyrify
 
-![Build Status](https://github.com/{GioMont3}/{lyrify}/actions/workflows/python-app.yml/badge.svg)
+![Last Commit](https://img.shields.io/github/last-commit/GioMontre/lyrify.svg)
 
 ![Python Versions](https://img.shields.io/pypi/pyversions/{lyrify}/.svg)
 
