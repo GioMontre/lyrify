@@ -2,7 +2,7 @@
 
 ![Last Commit](https://img.shields.io/github/last-commit/GioMontre/lyrify)
 
-![Python Versions](https://img.shields.io/pypi/pyversions/{lyrify}/.svg)
+![GitHub stars](https://img.shields.io/github/stars/GioMontre/lyrify.svg?style=social)
 
 ## Description
 
