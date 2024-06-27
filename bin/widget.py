@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import threading
 import time
-import main_spotypy
+import lyrics_getter as lg
 
 
 class SpotifyWidget:
@@ -22,12 +22,14 @@ class SpotifyWidget:
 
     def get_lyrics(self):
         # Call your existing lyrics fetching function
-        return "Sample Lyrics"
+        song_name, artist_name = lg.get_currently_playing()
+        lyrics = lg.get_lyrics(song_name, artist_name)
+        return lyrics
 
 
 def update_widget(widget):
     while True:
-        song_name, artist_name = get_current_song()
+        song_name, artist_name = lg.get_currently_playing()
         if song_name:
             widget.update_song(song_name, artist_name)
         time.sleep(10)

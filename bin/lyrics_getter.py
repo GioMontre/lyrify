@@ -7,6 +7,7 @@ import re
 
 
 def get_currently_playing():
+    """get_currently_playing."""
     load_dotenv()
 
     client_id = os.getenv("CLIENT_ID")
@@ -26,10 +27,18 @@ def get_currently_playing():
 
     results = sp.current_playback()
     if results:
-        return results["item"]["name"], results["item"]["artists"][0]["name"]
+        return (
+            clean_song_name(results["item"]["name"], ["(", ")", "-"]),
+            results["item"]["artists"][0]["name"],
+        )
 
 
 def get_lyrics(song_name, artist):
+    """get_lyrics.
+
+    :param song_name:
+    :param artist:
+    """
 
     load_dotenv()
     genius_id = os.getenv("GENIUS_ID")
@@ -41,22 +50,26 @@ def get_lyrics(song_name, artist):
 
     song = genius.search_song(song_name, artist)
     if song:
-        print(song.lyrics)
+        return song.lyrics
     else:
-        print("Lyrics not found.")
+        return "Lyrics not found."
 
 
-def split_string_by_multiple_delimiters(string, delimiters):
+def clean_song_name(string, delimiters):
+    """clean_song_name.
+
+    :param string:
+    :param delimiters:
+    """
     regex_pattern = "|".join(map(re.escape, delimiters))
     return re.split(regex_pattern, string)[0].strip()
 
 
 def main():
+    """main."""
     song_name, artist = get_currently_playing()
 
     if song_name and artist:
-        song_name = split_string_by_multiple_delimiters(song_name, ["(", ")", "-"])
-
         print(get_lyrics(song_name, artist))
     else:
         print("No track is currently playing.")
