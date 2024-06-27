@@ -1,6 +1,8 @@
 # lyrify
 
-![Build Status](https://github.com/GioMont3/lyrify/actions/workflows/python-app.yml/badge.svg)
+![Build Status](https://github.com/{GioMont3}/{lyrify}/actions/workflows/python-app.yml/badge.svg)
+
+![Python Versions](https://img.shields.io/pypi/pyversions/{lyrify}/.svg)
 
 ## Description
 
