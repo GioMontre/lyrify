@@ -1,6 +1,6 @@
 # lyrify
 
-![Last Commit](https://img.shields.io/github/last-commit/GioMontre/lyrify.svg)
+![Last Commit](https://img.shields.io/github/last-commit/GioMontre/lyrify)
 
 ![Python Versions](https://img.shields.io/pypi/pyversions/{lyrify}/.svg)
 
