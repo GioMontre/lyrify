@@ -22,14 +22,14 @@ class SpotifyWidget:
 
     def get_lyrics(self):
         # Call your existing lyrics fetching function
-        song_name, artist_name = lg.get_currently_playing()
+        song_name, artist_name = lg.get_currently_playing_song()
         lyrics = lg.get_lyrics(song_name, artist_name)
         return lyrics
 
 
 def update_widget(widget):
     while True:
-        song_name, artist_name = lg.get_currently_playing()
+        song_name, artist_name = lg.get_currently_playing_song()
         if song_name:
             widget.update_song(song_name, artist_name)
         time.sleep(10)
