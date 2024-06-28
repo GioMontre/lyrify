@@ -1,0 +1,16 @@
+beautifulsoup4==4.12.3
+certifi==2024.6.2
+charset-normalizer==3.3.2
+doq==0.10.0
+idna==3.7
+Jinja2==3.1.4
+lyricsgenius @ git+https://github.com/johnwmillr/LyricsGenius.git@b33deaa1a4486aad49f945e7c5f3196457bdb2b8
+MarkupSafe==2.1.5
+parso==0.8.4
+python-dotenv==1.0.1
+redis==5.0.7
+requests==2.32.3
+soupsieve==2.5
+spotipy==2.24.0
+toml==0.10.2
+urllib3==2.2.2
