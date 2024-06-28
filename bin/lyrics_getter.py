@@ -40,7 +40,7 @@ def get_currently_playing_song() -> tuple[str, str]:
 
     except Exception as e:
         print(f"Something went wrong: {e}")
-        raise e
+        return "Can't get currently playing.", "Can't get the artist."
 
 
 def get_lyrics(song_name: str, artist: str) -> str:
@@ -67,7 +67,7 @@ def get_lyrics(song_name: str, artist: str) -> str:
 
     except Exception as e:
         print(f"Something went wrong: {e}")
-        raise e
+        return f"Something went wrong: {e}"
 
 
 def clean_song_name(string: str, delimiters: list[str]) -> str:
@@ -85,7 +85,7 @@ def clean_song_name(string: str, delimiters: list[str]) -> str:
 
     except Exception as e:
         print(f"Something went wrong: {e}")
-        raise e
+        return f"Something went wrong: {e}"
 
 
 if __name__ == "__main__":
