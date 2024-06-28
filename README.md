@@ -14,6 +14,7 @@ Basicly when it runs it returns the lyrics of the playing song.
 
 - interface for lyrics.
 - readme.md
+- set up scripts.
 
 ## Authors
 
