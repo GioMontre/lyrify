@@ -10,6 +10,11 @@
 Free realtime software for spotify lyrics.
 Basicly when it runs it returns the lyrics of the playing song.
 
+## TODO
+
+- interface for lyrics.
+- readme.md
+
 ## Authors
 
 GioMont3
