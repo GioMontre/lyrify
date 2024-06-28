@@ -2,7 +2,6 @@
     Author: Giovanni Montresor
 """
 
-from types import _ReturnT_co
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
